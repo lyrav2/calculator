@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="text-center">                           
+                    <p class="firstDisplay">0</p>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                <div class="float-right">
+                    <p class="secondDisplay"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 view overlay">
+                <div class="mask flex-center rgba-red-strong">
+                <button type="button" onclick="divide()" class="btn btn-outline-dark btn-block">÷</button>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="" class="btn btn-outline-dark btn-block">CE</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="clearNumber()" class="btn btn-outline-dark btn-block">C</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="deleteNumber()" class="btn btn-outline-dark btn-block">Back</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" onclick="multiply()" class="btn btn-outline-dark btn-block">x</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(7)" class="btn btn-outline-dark btn-block">7</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(8)" class="btn btn-outline-dark btn-block">8</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(9)" class="btn btn-outline-dark btn-block">9</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" onclick="subtract()" class="btn btn-outline-dark btn-block">-</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(4)" class="btn btn-outline-dark btn-block">4</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(5)" class="btn btn-outline-dark btn-block">5</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(6)" class="btn btn-outline-dark btn-block">6</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" onclick="add()" class="btn btn-outline-dark btn-block">+</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(1)" class="btn btn-outline-dark btn-block">1</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(2)" class="btn btn-outline-dark btn-block">2</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(3)" class="btn btn-outline-dark btn-block">3</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" onclick="" class="btn btn-outline-dark btn-block">+/-</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="decimalNumber()" class="btn btn-outline-dark btn-block">.</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="getNumber(0)" class="btn btn-outline-dark btn-block">0</button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" onclick="operate(firstNumber, secondNumber)" class="btn btn-outline-dark btn-block">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
